@@ -11,6 +11,7 @@ repositories {
 }
 
 dependencies {
+    implementation platform("org.springframework.boot:spring-boot-dependencies:3.5.10")
     implementation platform('run.halo.tools.platform:plugin:2.22.0')
     compileOnly 'run.halo.app:api'
 
@@ -47,5 +48,7 @@ tasks.named('classes') {
 
 halo {
     version = '2.22'
+    debug = true
+    debugPort = 5005
 }
 

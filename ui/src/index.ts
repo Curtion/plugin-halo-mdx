@@ -1,7 +1,7 @@
-import { definePlugin } from '@halo-dev/ui-shared'
-import HomeView from './views/HomeView.vue'
 import { IconPlug } from '@halo-dev/components'
+import { definePlugin } from '@halo-dev/ui-shared'
 import { markRaw } from 'vue'
+import HomeView from './views/HomeView.vue'
 
 export default definePlugin({
   components: {},
