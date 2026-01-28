@@ -1,6 +1,7 @@
 import { VLoading } from '@halo-dev/components'
 import { definePlugin } from '@halo-dev/ui-shared'
 import { defineAsyncComponent } from 'vue'
+import 'virtual:uno.css'
 
 export default definePlugin({
   extensionPoints: {
@@ -10,7 +11,7 @@ export default definePlugin({
           name: 'mdx',
           displayName: 'MDX 编辑器',
           component: defineAsyncComponent({
-            loader: () => import('./components/mdx.vue'),
+            loader: () => import('./mdx/mdx.vue'),
             loadingComponent: VLoading,
           }),
           rawType: 'mdx',

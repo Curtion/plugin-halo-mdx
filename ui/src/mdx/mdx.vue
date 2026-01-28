@@ -28,7 +28,11 @@ const emit = defineEmits<{
 </script>
 
 <template>
-  {{ props.title }}
+  <div class="w-full h-full">
+    <div class="">left</div>
+    <div>edit</div>
+    <div>Terminal</div>
+  </div>
 </template>
 
 <style lang="scss" scoped>
